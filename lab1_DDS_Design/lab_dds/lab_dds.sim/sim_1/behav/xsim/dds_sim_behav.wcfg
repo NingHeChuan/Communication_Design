@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="dds_sim_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="dds_sim" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="55649666000fs"></ZoomStartTime>
+      <ZoomEndTime time="69029666001fs"></ZoomEndTime>
+      <Cursor1Time time="59349666000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="101"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="12" />
+   <wvobject fp_name="/dds_sim/dds_top_s/sin_cos" type="logic">
+      <obj_property name="ElementShortName">sin_cos</obj_property>
+      <obj_property name="ObjectShortName">sin_cos</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dds_sim/dds_top_s/DAC_A_B_s_0" type="logic">
+      <obj_property name="ElementShortName">DAC_A_B_s_0</obj_property>
+      <obj_property name="ObjectShortName">DAC_A_B_s_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dds_sim/dds_top_s/clk_100MHz" type="logic">
+      <obj_property name="ElementShortName">clk_100MHz</obj_property>
+      <obj_property name="ObjectShortName">clk_100MHz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dds_sim/dds_top_s/da_cs_0" type="logic">
+      <obj_property name="ElementShortName">da_cs_0</obj_property>
+      <obj_property name="ObjectShortName">da_cs_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dds_sim/dds_top_s/out_da_data_0" type="array">
+      <obj_property name="ElementShortName">out_da_data_0[11:0]</obj_property>
+      <obj_property name="ObjectShortName">out_da_data_0[11:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dds_sim/dds_top_s/out_da_wr_0" type="logic">
+      <obj_property name="ElementShortName">out_da_wr_0</obj_property>
+      <obj_property name="ObjectShortName">out_da_wr_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dds_sim/dds_top_s/m_axis_data_tvalid" type="logic">
+      <obj_property name="ElementShortName">m_axis_data_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dds_sim/dds_top_s/m_axis_data_tdata" type="array">
+      <obj_property name="ElementShortName">m_axis_data_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dds_sim/dds_top_s/rst_count" type="array">
+      <obj_property name="ElementShortName">rst_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rst_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dds_sim/dds_top_s/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dds_sim/dds_top_s/clk8m" type="logic">
+      <obj_property name="ElementShortName">clk8m</obj_property>
+      <obj_property name="ObjectShortName">clk8m</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dds_sim/dds_top_s/clk20m" type="logic">
+      <obj_property name="ElementShortName">clk20m</obj_property>
+      <obj_property name="ObjectShortName">clk20m</obj_property>
+   </wvobject>
+</wave_config>

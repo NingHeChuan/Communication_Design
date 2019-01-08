@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Jan  8 12:00:42 2019
+# Process ID: 16680
+# Current directory: H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.runs/impl_1
+# Command line: vivado.exe -log dds_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source dds_top.tcl -notrace
+# Log file: H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.runs/impl_1/dds_top.vdi
+# Journal file: H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source dds_top.tcl -notrace

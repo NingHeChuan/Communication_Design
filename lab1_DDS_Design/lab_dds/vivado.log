@@ -1,0 +1,1017 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Jan  8 11:33:53 2019
+# Process ID: 18556
+# Current directory: C:/Users/ninghechuan/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22428
+# Log file: C:/Users/ninghechuan/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/ninghechuan/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2017.4/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 782.992 ; gain = 86.148
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/ip/blk_mem_triangular/blk_mem_triangular.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/ip/blk_mem_square/blk_mem_square.xci' is already up-to-date
+[Tue Jan  8 11:37:36 2019] Launched synth_1...
+Run output will be captured here: H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.runs/synth_1/runme.log
+[Tue Jan  8 11:37:36 2019] Launched impl_1...
+Run output will be captured here: H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203367162A
+set_property PROGRAM.FILE {H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.runs/impl_1/dds_top.bit} [get_hw_devices xc7z015_1]
+current_hw_device [get_hw_devices xc7z015_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z015_1] 0]
+INFO: [Labtools 27-1434] Device xc7z015 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7z015_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z015_1]
+set_property PROGRAM.FILE {H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.runs/impl_1/dds_top.bit} [get_hw_devices xc7z015_1]
+program_hw_devices [get_hw_devices xc7z015_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z015_1] 0]
+INFO: [Labtools 27-1434] Device xc7z015 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2017.4/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'dds_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/blk_mem_cos.mif'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/cos_coe.coe'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/blk_mem_sin.mif'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/sin_coe.coe'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/blk_mem_square.mif'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/square.coe'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/blk_mem_triangular.mif'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/triangular.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dds_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/ip/blk_mem_triangular/sim/blk_mem_triangular.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_triangular
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/ip/blk_mem_square/sim/blk_mem_square.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_square
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/ip/blk_mem_cos/sim/blk_mem_cos.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_cos
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/ip/blk_mem_sin/sim/blk_mem_sin.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_sin
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/DA_5428.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DA_5428
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/Mux_DDS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_DDS
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/dds_design.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dds_top
+WARNING: [VRFC 10-1315] redeclaration of ansi port mux is not allowed [H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/dds_design.v:47]
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sim_1/new/dds_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dds_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 21381eecc4ed4a4b989c1dc79494e657 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot dds_sim_behav xil_defaultlib.dds_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 32 for port m_axis_data_tdata [H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/dds_design.v:119]
+WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2419]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_sin
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_cos
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_square
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_triangular
+Compiling module xil_defaultlib.Mux_DDS
+Compiling module xil_defaultlib.DA_5428
+Compiling module xil_defaultlib.dds_top
+Compiling module xil_defaultlib.dds_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dds_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dds_sim_behav -key {Behavioral:sim_1:Functional:dds_sim} -tclbatch {dds_sim.tcl} -view {H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sim_1/imports/sim_1/dds_sim_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+open_wave_config H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sim_1/imports/sim_1/dds_sim_behav.wcfg
+source dds_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module dds_sim.dds_top_s.blk_mem_sin_inst.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module dds_sim.dds_top_s.blk_mem_cos_inst.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module dds_sim.dds_top_s.blk_mem_square_inst.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module dds_sim.dds_top_s.blk_mem_triangular_inst.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dds_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1501.625 ; gain = 26.129
+run all
+WARNING: [Simulator 45-29] Cannot open source file /wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v: file does not exist.
+run all
+run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1511.176 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:44 ; elapsed = 00:00:26 . Memory (MB): peak = 1511.176 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2017.4/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'dds_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/blk_mem_cos.mif'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/cos_coe.coe'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/blk_mem_sin.mif'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/sin_coe.coe'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/blk_mem_square.mif'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/square.coe'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/blk_mem_triangular.mif'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/triangular.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dds_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/ip/blk_mem_triangular/sim/blk_mem_triangular.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_triangular
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/ip/blk_mem_square/sim/blk_mem_square.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_square
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/ip/blk_mem_cos/sim/blk_mem_cos.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_cos
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/ip/blk_mem_sin/sim/blk_mem_sin.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_sin
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/DA_5428.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DA_5428
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/Mux_DDS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_DDS
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/dds_design.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dds_top
+WARNING: [VRFC 10-1315] redeclaration of ansi port mux is not allowed [H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/dds_design.v:47]
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sim_1/new/dds_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dds_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 21381eecc4ed4a4b989c1dc79494e657 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot dds_sim_behav xil_defaultlib.dds_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 32 for port m_axis_data_tdata [H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/dds_design.v:119]
+WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2419]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_sin
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_cos
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_square
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_triangular
+Compiling module xil_defaultlib.Mux_DDS
+Compiling module xil_defaultlib.DA_5428
+Compiling module xil_defaultlib.dds_top
+Compiling module xil_defaultlib.dds_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dds_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module dds_sim.dds_top_s.blk_mem_sin_inst.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module dds_sim.dds_top_s.blk_mem_cos_inst.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module dds_sim.dds_top_s.blk_mem_square_inst.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module dds_sim.dds_top_s.blk_mem_triangular_inst.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1511.176 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:01:38 ; elapsed = 00:00:57 . Memory (MB): peak = 1520.809 ; gain = 9.633
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2017.4/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'dds_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/blk_mem_cos.mif'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/cos_coe.coe'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/blk_mem_sin.mif'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/sin_coe.coe'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/blk_mem_square.mif'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/square.coe'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/blk_mem_triangular.mif'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/triangular.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dds_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/ip/blk_mem_triangular/sim/blk_mem_triangular.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_triangular
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/ip/blk_mem_square/sim/blk_mem_square.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_square
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/ip/blk_mem_cos/sim/blk_mem_cos.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_cos
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/ip/blk_mem_sin/sim/blk_mem_sin.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_sin
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/DA_5428.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DA_5428
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/Mux_DDS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_DDS
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/dds_design.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dds_top
+WARNING: [VRFC 10-1315] redeclaration of ansi port mux is not allowed [H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/dds_design.v:47]
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sim_1/new/dds_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dds_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 21381eecc4ed4a4b989c1dc79494e657 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot dds_sim_behav xil_defaultlib.dds_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 32 for port m_axis_data_tdata [H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/dds_design.v:119]
+WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2419]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_sin
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_cos
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_square
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_triangular
+Compiling module xil_defaultlib.Mux_DDS
+Compiling module xil_defaultlib.DA_5428
+Compiling module xil_defaultlib.dds_top
+Compiling module xil_defaultlib.dds_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dds_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module dds_sim.dds_top_s.blk_mem_sin_inst.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module dds_sim.dds_top_s.blk_mem_cos_inst.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module dds_sim.dds_top_s.blk_mem_square_inst.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module dds_sim.dds_top_s.blk_mem_triangular_inst.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1520.809 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:01:45 ; elapsed = 00:00:58 . Memory (MB): peak = 1520.809 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2017.4/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'dds_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/blk_mem_cos.mif'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/cos_coe.coe'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/blk_mem_sin.mif'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/sin_coe.coe'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/blk_mem_square.mif'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/square.coe'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/blk_mem_triangular.mif'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/triangular.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dds_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/ip/blk_mem_triangular/sim/blk_mem_triangular.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_triangular
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/ip/blk_mem_square/sim/blk_mem_square.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_square
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/ip/blk_mem_cos/sim/blk_mem_cos.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_cos
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/ip/blk_mem_sin/sim/blk_mem_sin.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_sin
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/DA_5428.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DA_5428
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/Mux_DDS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_DDS
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/dds_design.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dds_top
+WARNING: [VRFC 10-1315] redeclaration of ansi port mux is not allowed [H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/dds_design.v:47]
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sim_1/new/dds_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dds_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 21381eecc4ed4a4b989c1dc79494e657 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot dds_sim_behav xil_defaultlib.dds_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 32 for port m_axis_data_tdata [H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/dds_design.v:119]
+WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2419]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_sin
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_cos
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_square
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_triangular
+Compiling module xil_defaultlib.Mux_DDS
+Compiling module xil_defaultlib.DA_5428
+Compiling module xil_defaultlib.dds_top
+Compiling module xil_defaultlib.dds_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dds_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module dds_sim.dds_top_s.blk_mem_sin_inst.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module dds_sim.dds_top_s.blk_mem_cos_inst.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module dds_sim.dds_top_s.blk_mem_square_inst.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module dds_sim.dds_top_s.blk_mem_triangular_inst.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1520.809 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:25 ; elapsed = 00:00:15 . Memory (MB): peak = 1524.125 ; gain = 0.066
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2017.4/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'dds_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/blk_mem_cos.mif'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/cos_coe.coe'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/blk_mem_sin.mif'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/sin_coe.coe'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/blk_mem_square.mif'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/square.coe'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/blk_mem_triangular.mif'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/triangular.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dds_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/ip/blk_mem_triangular/sim/blk_mem_triangular.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_triangular
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/ip/blk_mem_square/sim/blk_mem_square.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_square
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/ip/blk_mem_cos/sim/blk_mem_cos.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_cos
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/ip/blk_mem_sin/sim/blk_mem_sin.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_sin
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/DA_5428.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DA_5428
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/Mux_DDS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_DDS
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/dds_design.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dds_top
+WARNING: [VRFC 10-1315] redeclaration of ansi port mux is not allowed [H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/dds_design.v:47]
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sim_1/new/dds_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dds_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 21381eecc4ed4a4b989c1dc79494e657 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot dds_sim_behav xil_defaultlib.dds_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 32 for port m_axis_data_tdata [H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/dds_design.v:119]
+WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2419]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_sin
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_cos
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_square
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_triangular
+Compiling module xil_defaultlib.Mux_DDS
+Compiling module xil_defaultlib.DA_5428
+Compiling module xil_defaultlib.dds_top
+Compiling module xil_defaultlib.dds_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dds_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module dds_sim.dds_top_s.blk_mem_sin_inst.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module dds_sim.dds_top_s.blk_mem_cos_inst.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module dds_sim.dds_top_s.blk_mem_square_inst.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module dds_sim.dds_top_s.blk_mem_triangular_inst.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1524.469 ; gain = 0.250
+run all
+run: Time (s): cpu = 00:00:41 ; elapsed = 00:00:24 . Memory (MB): peak = 1529.535 ; gain = 5.066
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2017.4/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'dds_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/blk_mem_cos.mif'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/cos_coe.coe'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/blk_mem_sin.mif'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/sin_coe.coe'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/blk_mem_square.mif'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/square.coe'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/blk_mem_triangular.mif'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/triangular.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dds_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/ip/blk_mem_triangular/sim/blk_mem_triangular.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_triangular
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/ip/blk_mem_square/sim/blk_mem_square.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_square
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/ip/blk_mem_cos/sim/blk_mem_cos.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_cos
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/ip/blk_mem_sin/sim/blk_mem_sin.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_sin
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/DA_5428.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DA_5428
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/Mux_DDS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_DDS
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/dds_design.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dds_top
+WARNING: [VRFC 10-1315] redeclaration of ansi port mux is not allowed [H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/dds_design.v:47]
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sim_1/new/dds_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dds_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 21381eecc4ed4a4b989c1dc79494e657 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot dds_sim_behav xil_defaultlib.dds_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 32 for port m_axis_data_tdata [H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/dds_design.v:119]
+WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2419]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_sin
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_cos
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_square
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_triangular
+Compiling module xil_defaultlib.Mux_DDS
+Compiling module xil_defaultlib.DA_5428
+Compiling module xil_defaultlib.dds_top
+Compiling module xil_defaultlib.dds_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dds_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module dds_sim.dds_top_s.blk_mem_sin_inst.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module dds_sim.dds_top_s.blk_mem_cos_inst.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module dds_sim.dds_top_s.blk_mem_square_inst.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module dds_sim.dds_top_s.blk_mem_triangular_inst.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1529.590 ; gain = 0.027
+run all
+run: Time (s): cpu = 00:01:01 ; elapsed = 00:00:35 . Memory (MB): peak = 1535.609 ; gain = 5.895
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2017.4/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'dds_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/blk_mem_cos.mif'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/cos_coe.coe'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/blk_mem_sin.mif'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/sin_coe.coe'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/blk_mem_square.mif'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/square.coe'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/blk_mem_triangular.mif'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/triangular.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dds_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/ip/blk_mem_triangular/sim/blk_mem_triangular.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_triangular
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/ip/blk_mem_square/sim/blk_mem_square.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_square
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/ip/blk_mem_cos/sim/blk_mem_cos.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_cos
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/ip/blk_mem_sin/sim/blk_mem_sin.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_sin
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/DA_5428.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DA_5428
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/Mux_DDS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_DDS
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/dds_design.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dds_top
+WARNING: [VRFC 10-1315] redeclaration of ansi port mux is not allowed [H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/dds_design.v:47]
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sim_1/new/dds_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dds_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 21381eecc4ed4a4b989c1dc79494e657 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot dds_sim_behav xil_defaultlib.dds_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 32 for port m_axis_data_tdata [H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/dds_design.v:119]
+WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2419]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_sin
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_cos
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_square
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_triangular
+Compiling module xil_defaultlib.Mux_DDS
+Compiling module xil_defaultlib.DA_5428
+Compiling module xil_defaultlib.dds_top
+Compiling module xil_defaultlib.dds_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dds_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module dds_sim.dds_top_s.blk_mem_sin_inst.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module dds_sim.dds_top_s.blk_mem_cos_inst.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module dds_sim.dds_top_s.blk_mem_square_inst.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module dds_sim.dds_top_s.blk_mem_triangular_inst.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1537.184 ; gain = 0.000
+run all
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2017.4/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'dds_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/blk_mem_cos.mif'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/cos_coe.coe'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/blk_mem_sin.mif'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/sin_coe.coe'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/blk_mem_square.mif'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/square.coe'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/blk_mem_triangular.mif'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/triangular.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dds_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/ip/blk_mem_triangular/sim/blk_mem_triangular.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_triangular
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/ip/blk_mem_square/sim/blk_mem_square.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_square
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/ip/blk_mem_cos/sim/blk_mem_cos.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_cos
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/ip/blk_mem_sin/sim/blk_mem_sin.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_sin
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/DA_5428.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DA_5428
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/Mux_DDS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_DDS
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/dds_design.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dds_top
+WARNING: [VRFC 10-1315] redeclaration of ansi port mux is not allowed [H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/dds_design.v:47]
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sim_1/new/dds_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dds_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 21381eecc4ed4a4b989c1dc79494e657 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot dds_sim_behav xil_defaultlib.dds_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 32 for port m_axis_data_tdata [H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/dds_design.v:119]
+WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2419]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_sin
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_cos
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_square
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_triangular
+Compiling module xil_defaultlib.Mux_DDS
+Compiling module xil_defaultlib.DA_5428
+Compiling module xil_defaultlib.dds_top
+Compiling module xil_defaultlib.dds_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dds_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module dds_sim.dds_top_s.blk_mem_sin_inst.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module dds_sim.dds_top_s.blk_mem_cos_inst.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module dds_sim.dds_top_s.blk_mem_square_inst.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module dds_sim.dds_top_s.blk_mem_triangular_inst.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1539.820 ; gain = 0.000
+run all
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2017.4/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'dds_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/blk_mem_cos.mif'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/cos_coe.coe'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/blk_mem_sin.mif'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/sin_coe.coe'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/blk_mem_square.mif'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/square.coe'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/blk_mem_triangular.mif'
+INFO: [SIM-utils-43] Exported 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim/triangular.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dds_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/ip/blk_mem_triangular/sim/blk_mem_triangular.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_triangular
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/ip/blk_mem_square/sim/blk_mem_square.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_square
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/ip/blk_mem_cos/sim/blk_mem_cos.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_cos
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/ip/blk_mem_sin/sim/blk_mem_sin.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_sin
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/DA_5428.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DA_5428
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/Mux_DDS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_DDS
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/dds_design.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dds_top
+WARNING: [VRFC 10-1315] redeclaration of ansi port mux is not allowed [H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/dds_design.v:47]
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sim_1/new/dds_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dds_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 21381eecc4ed4a4b989c1dc79494e657 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot dds_sim_behav xil_defaultlib.dds_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 32 for port m_axis_data_tdata [H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/new/dds_design.v:119]
+WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2419]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_sin
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_cos
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_square
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_triangular
+Compiling module xil_defaultlib.Mux_DDS
+Compiling module xil_defaultlib.DA_5428
+Compiling module xil_defaultlib.dds_top
+Compiling module xil_defaultlib.dds_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dds_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module dds_sim.dds_top_s.blk_mem_sin_inst.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module dds_sim.dds_top_s.blk_mem_cos_inst.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module dds_sim.dds_top_s.blk_mem_square_inst.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module dds_sim.dds_top_s.blk_mem_triangular_inst.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1539.820 ; gain = 0.000
+run all
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/ip/blk_mem_triangular/blk_mem_triangular.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sources_1/ip/blk_mem_square/blk_mem_square.xci' is already up-to-date
+[Tue Jan  8 11:59:55 2019] Launched synth_1...
+Run output will be captured here: H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.runs/synth_1/runme.log
+[Tue Jan  8 11:59:55 2019] Launched impl_1...
+Run output will be captured here: H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.runs/impl_1/runme.log
+save_wave_config {H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.srcs/sim_1/imports/sim_1/dds_sim_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203367162A
+set_property PROGRAM.FILE {H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.runs/impl_1/dds_top.bit} [get_hw_devices xc7z015_1]
+current_hw_device [get_hw_devices xc7z015_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z015_1] 0]
+INFO: [Labtools 27-1434] Device xc7z015 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7z015_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z015_1]
+set_property PROGRAM.FILE {H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds/lab_dds.runs/impl_1/dds_top.bit} [get_hw_devices xc7z015_1]
+program_hw_devices [get_hw_devices xc7z015_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z015_1] 0]
+INFO: [Labtools 27-1434] Device xc7z015 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210203367162A
+close_hw
+archive_project H:/Vivado/FPGA_Communicate_Base/lab1_DDS_Design/lab_dds_block_ram/lab_dds.xpr.zip -temp_dir C:/Users/ninghechuan/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-18556-NingHeChuan -force -include_local_ip_cache
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/ninghechuan/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-18556-NingHeChuan' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2017.4/Vivado/2017.4/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/ninghechuan/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-18556-NingHeChuan/PrjAr/_X_'.
+INFO: [Device 21-403] Loading part xc7z015iclg485-1L
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'blk_mem_sin_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'blk_mem_cos_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-133] re-setting run 'blk_mem_sin_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'blk_mem_cos_impl_1'...
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'blk_mem_cos'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'blk_mem_cos'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'blk_mem_sin'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'blk_mem_sin'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sources_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'

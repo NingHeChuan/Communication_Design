@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="dds_sim_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="dds_sim" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="7310000000001fs"></ZoomEndTime>
+      <Cursor1Time time="142000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="134"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="14" />
+   <wvobject fp_name="/dds_sim/dds_top_s/clk_50m" type="logic">
+      <obj_property name="ElementShortName">clk_50m</obj_property>
+      <obj_property name="ObjectShortName">clk_50m</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dds_sim/dds_top_s/phase_data" type="array">
+      <obj_property name="ElementShortName">phase_data[11:0]</obj_property>
+      <obj_property name="ObjectShortName">phase_data[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dds_sim/dds_top_s/DAC_A_B_s_0" type="logic">
+      <obj_property name="ElementShortName">DAC_A_B_s_0</obj_property>
+      <obj_property name="ObjectShortName">DAC_A_B_s_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dds_sim/dds_top_s/da_cs_0" type="logic">
+      <obj_property name="ElementShortName">da_cs_0</obj_property>
+      <obj_property name="ObjectShortName">da_cs_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dds_sim/dds_top_s/out_da_data_0" type="array">
+      <obj_property name="ElementShortName">out_da_data_0[11:0]</obj_property>
+      <obj_property name="ObjectShortName">out_da_data_0[11:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_LINEAR</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dds_sim/dds_top_s/out_da_wr_0" type="logic">
+      <obj_property name="ElementShortName">out_da_wr_0</obj_property>
+      <obj_property name="ObjectShortName">out_da_wr_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dds_sim/dds_top_s/m_axis_data_tvalid" type="logic">
+      <obj_property name="ElementShortName">m_axis_data_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dds_sim/dds_top_s/m_axis_data_tdata" type="array">
+      <obj_property name="ElementShortName">m_axis_data_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dds_sim/dds_top_s/rst_count" type="array">
+      <obj_property name="ElementShortName">rst_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rst_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dds_sim/dds_top_s/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dds_sim/dds_top_s/fcnt" type="array">
+      <obj_property name="ElementShortName">fcnt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fcnt[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dds_sim/dds_top_s/addra" type="array">
+      <obj_property name="ElementShortName">addra[11:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dds_sim/dds_top_s/douta" type="array">
+      <obj_property name="ElementShortName">douta[15:0]</obj_property>
+      <obj_property name="ObjectShortName">douta[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">-5110.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_LINEAR</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dds_sim/dds_top_s/clk_30m" type="logic">
+      <obj_property name="ElementShortName">clk_30m</obj_property>
+      <obj_property name="ObjectShortName">clk_30m</obj_property>
+   </wvobject>
+</wave_config>
