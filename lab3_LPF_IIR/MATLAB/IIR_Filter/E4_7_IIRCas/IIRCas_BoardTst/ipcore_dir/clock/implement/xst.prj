@@ -1,0 +1,2 @@
+vhdl work ../../clock.vhd
+vhdl work ../example_design/clock_exdes.vhd

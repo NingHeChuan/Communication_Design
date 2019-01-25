@@ -1,0 +1,4 @@
+vhdl work "../SecondTap.vhd"
+vhdl work "../FirstTap.vhd"
+vhdl work "../IIRCas.vhd"
+vhdl work "../tst_IIRCas.vhd"

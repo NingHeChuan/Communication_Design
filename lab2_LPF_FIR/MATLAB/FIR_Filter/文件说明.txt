@@ -1,0 +1,11 @@
+	signed2unsigned.m是一个函数 将有符号数转换为无符号数
+        unsigned2signed.m是一个函数 将无符号数转换为有符号数
+	noise_s2us.m生成一个高斯白噪信号，取4096点，转换为无符号形后存入.txt文件中
+	sinx_s2us.m是两个正弦信号相加后的信号采样点，其中一个正弦信号频率是另一个的8倍频
+	fir_sinx.m是将afterfir.txt文件中的数据（数据要大于1024个）读入MATLAB中，画出时域波形
+	fir_noise.m是将afterfir.txt文件中的数据（数据要大于1024个）读入MATLAB中，画出频谱图
+	
+	注：
+	上述afterfir.txt文件是每次modelsim仿真后产生的文件，在ise工程下可找到，当信号源是高斯白噪
+	信号（in_sw = 0）对应fir_noise.m来显示滤波后仿真频谱图；当信号源是正弦信号（in_sw = 1）
+	对应fir_sinx.m来显示滤波后时域波形

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "H:/MATLAB/Communication/IIR_Filter/E4_7_IIRCas/IIRCas/work/tst_IIRCas_isim_beh.exe" -prj "H:/MATLAB/Communication/IIR_Filter/E4_7_IIRCas/IIRCas/work/tst_IIRCas_beh.prj" "work.tst_IIRCas" 

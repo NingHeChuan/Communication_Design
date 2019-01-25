@@ -1,0 +1,11 @@
+ISim log file
+Running: H:\MATLAB\Communication\IIR_Filter\E4_7_IIRCas\IIRCas\work\tst_IIRCas_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb H:/MATLAB/Communication/IIR_Filter/E4_7_IIRCas/IIRCas/work/tst_IIRCas_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+ERROR: at 0 ps: Could not open file '..\E4_6_FirIpCore\E4_6_TestData.txt' of text
+ERROR: Time resolution is 1 fs
+# onerror resume
+# wave add /
+No active Database
+# run 1000 ns
+Unable to execute live simulation command.

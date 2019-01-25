@@ -1,0 +1,129 @@
+######### Global System Clock and Rst Pins ########
+NET  gclk1         LOC = C10 | TNM_NET = sys_clk1_pin;
+TIMESPEC TS_sys_clk1_pin = PERIOD sys_clk1_pin 50000 kHz;
+
+NET  gclk2         LOC = H3  | TNM_NET = sys_clk2_pin;
+TIMESPEC TS_sys_clk2_pin = PERIOD sys_clk2_pin 50000 kHz;
+
+NET  reset         LOC = K3    ;   ## high level active
+
+PIN "u1/u1/clkout1_buf.O" CLOCK_DEDICATED_ROUTE = FALSE;
+PIN "u1/u2/clkout1_buf.O" CLOCK_DEDICATED_ROUTE = FALSE; 
+
+######### LED Pins ########
+#NET led<0>       LOC = K2     ;       
+#NET led<1>       LOC = L1     ;      
+#NET led<2>       LOC = L4     ;      
+#NET led<3>       LOC = E3     ;       
+#NET led<4>       LOC = F4     ;       
+#NET led<5>       LOC = H4     ;      
+#NET led<6>       LOC = J3     ;      
+#NET led<7>       LOC = L3     ;    
+
+
+######### KEY Pins ########  
+NET key1          LOC = K1    ;   ## high level active
+#NET key2          LOC = J4    ;  ## high level active    
+#NET key3          LOC = E4    ;  ## high level active    
+#NET key4          LOC = G3    ;  ## high level active    
+
+
+######### AD In Pins ######## 
+NET ad_clk        LOC = P6    ;       
+NET ad_din<0>     LOC = P9    ;      
+NET ad_din<1>     LOC = T9    ;     
+NET ad_din<2>     LOC = R9    ;     
+NET ad_din<3>     LOC = T8    ;      
+NET ad_din<4>     LOC = T7    ;      
+NET ad_din<5>     LOC = R7    ;       
+NET ad_din<6>     LOC = T6    ;        
+NET ad_din<7>     LOC = P7    ;        
+
+
+######### DA1 Out Pins ######## 
+NET da1_clk       LOC = P2    ;       
+NET da1_out<0>    LOC = M1    ; 
+NET da1_out<1>    LOC = M2    ; 
+NET da1_out<2>    LOC = N1    ; 
+NET da1_out<3>    LOC = M3    ; 
+NET da1_out<4>    LOC = N3    ; 
+NET da1_out<5>    LOC = P1    ; 
+NET da1_out<6>    LOC = R1    ; 
+NET da1_out<7>    LOC = R2    ;
+
+######### DA2 Out Pins ######## 
+NET da2_clk       LOC = P15   ;       
+NET da2_out<0>    LOC = T15   ; 
+NET da2_out<1>    LOC = R15   ; 
+NET da2_out<2>    LOC = R16   ; 
+NET da2_out<3>    LOC = P16   ; 
+NET da2_out<4>    LOC = N16   ; 
+NET da2_out<5>    LOC = M15   ; 
+NET da2_out<6>    LOC = M16   ; 
+NET da2_out<7>    LOC = L16   ;
+
+
+########  SEG Pins ######## 
+#NET seg_s<0>      LOC = D3    ;  #SEG1      
+#NET seg_s<1>      LOC = E1    ;  #SEG2  
+#NET seg_s<2>      LOC = G1    ;  #SEG3      
+#NET seg_s<3>      LOC = J1    ;  #SEG4  
+#NET seg_ap<0>     LOC = C2    ;  #A      
+#NET seg_ap<1>     LOC = F2    ;  #B
+#NET seg_ap<2>     LOC = H2    ;  #C     
+#NET seg_ap<3>     LOC = E2    ;  #D
+#NET seg_ap<4>     LOC = D1    ;  #E     
+#NET seg_ap<5>     LOC = C1    ;  #F
+#NET seg_ap<6>     LOC = H1    ;  #G     
+#NET seg_ap<7>     LOC = F1    ;  #DP
+
+
+######## RS232 Pins ######## 
+#NET rs232_rec     LOC = C11   ;	#computer->pcb   
+#NET rs232_txd     LOC = C13   ;  #pcb->computer   
+
+########  Extended 40 IO Pins ########  
+
+#NET ext3          LOC = B1    ;   
+#NET ext4          LOC = B2    ;       
+#NET ext5          LOC = A2    ;  
+#NET ext6          LOC = B3    ;       
+#NET ext7          LOC = A3    ;   
+#NET ext8          LOC = A4    ;       
+#NET ext9          LOC = B5    ;  
+#NET ext10         LOC = A8    ;       
+#NET ext11         LOC = B8    ;  
+#NET ext12         LOC = A5    ;       
+#NET ext13         LOC = A6    ; 
+#NET ext14         LOC = B6    ;       
+#NET ext15         LOC = A9    ;  
+#NET ext16         LOC = A7    ;       
+#NET ext17         LOC = A10   ; 
+#NET ext18         LOC = B10   ;       
+#NET ext19         LOC = A11   ;  
+#NET ext20         LOC = A12   ;       
+#NET ext21         LOC = B12   ; 
+#NET ext22         LOC = A13   ;       
+#NET ext23         LOC = A14   ;  
+#NET ext24         LOC = B14   ;       
+#NET ext25         LOC = C5    ; 
+#NET ext26         LOC = D5    ;       
+#NET ext27         LOC = C6    ;  
+#NET ext28         LOC = D6    ;       
+#NET ext29         LOC = C8    ; 
+#NET ext30         LOC = C7    ;       
+#NET ext31         LOC = B15   ;  
+#NET ext32         LOC = C9    ;       
+#NET ext33         LOC = C15   ; 
+#NET ext34         LOC = B16   ;       
+#NET ext35         LOC = D16   ; 
+#NET ext36         LOC = C16   ;       
+#NET ext37         LOC = E16   ;  
+#NET ext38         LOC = E15   ;   
+
+#NET ext1          GND         ;       
+#NET ext2          VCC(+5V)    ;     
+#NET ext39         3.3V        ;       
+#NET ext40         GND         ; 
+
+
