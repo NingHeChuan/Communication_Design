@@ -5,7 +5,7 @@ fid = fopen('sin.coe','w'); %写到sin.coe文件，用来初始化sin_rom
 fprintf(fid,'MEMORY_INITIALIZATION_RADIX=10;\n');
 fprintf(fid,'MEMORY_INITIALIZATION_VECTOR=\n');
 for i = 1:1:2^12
-fprintf(fid,'%d',r(i));
+fprintf(fid,'%x',r(i));
 if i==2^12
 fprintf(fid,';');
 else
@@ -23,7 +23,7 @@ fid = fopen('square.coe','w'); %写到square.coe，用来初始化rom_square
 fprintf(fid,'MEMORY_INITIALIZATION_RADIX=10;\n');
 fprintf(fid,'MEMORY_INITIALIZATION_VECTOR=\n');
 for i = 1:1:2^12
-fprintf(fid,'%d',r(i));
+fprintf(fid,'%x',r(i));
 if i==2^12
 fprintf(fid,';');
 else
@@ -41,7 +41,7 @@ fid = fopen('triangular.coe','w'); %写到triangular.coe，初始化三角波rom
 fprintf(fid,'MEMORY_INITIALIZATION_RADIX=10;\n');
 fprintf(fid,'MEMORY_INITIALIZATION_VECTOR=\n');
 for i = 1:1:2^12
-fprintf(fid,'%d',r(i));
+fprintf(fid,'%x',r(i));
 if i==2^12
 fprintf(fid,';');
 else
